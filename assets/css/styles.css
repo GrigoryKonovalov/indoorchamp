@@ -71,6 +71,7 @@ navbar ul li:last-child {
 
 .page_start {
     display: flex;
+    text-align: center;
 
 }
 
@@ -84,7 +85,7 @@ navbar ul li:last-child {
     justify-content: left;
     align-items: center;
     margin-top: -50px;
-    margin-left: -450px;
+
 }
 
 .contact__icon {
@@ -163,8 +164,8 @@ navbar ul li:last-child {
 
 .company {
     display: flex;
-    margin-left: 110px;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .line {
@@ -182,6 +183,7 @@ navbar ul li:last-child {
 .intro {
     background-color: #292c31;
     display: flex;
+    justify-content: center;
 }
 
 .darts1 {
@@ -223,8 +225,8 @@ navbar ul li:last-child {
 
 .blocks {
     display: flex;
-    margin-left: 160px;
     margin-top: 70px;
+    justify-content: center;
 }
 
 .block-category {
@@ -583,6 +585,8 @@ h3 {
 .hr {
     color: #a0a0a0;
     margin: auto;
+    text-align: center;
+    width: 835px;
 
 }
 
@@ -639,29 +643,50 @@ input {
     color: #fff;
 }
 
-.hr {
-    width: 835px;
-    margin-left: 340px;
-}
 
-.content_writer1 {
-    padding-right: 250px;
-    padding-left: 250px;
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
     font-size: 25px;
 }
 
-.down {
-    padding-right: 250px;
-    padding-left: 250px;
+.images11 {
+    display: flex;
 }
 
-
-.search_1 {
+/* .search_1 {
     width: 22%;
-    margin-top: -16px;
-    margin-left: 120px;
+    margin-top: -13px;
+    margin-left: 120px; 
+    /* position: relative;
+    z-index: 2; 
+ } */
+
+.search_button button {
+    width: 20px;
+    height: 20px;
+    margin-left: 250px;
+    background-color: #292c31;
+    border-style: none;
+
+}
+
+.search_button img {
+    width: 40px;
+    height: auto;
+    margin-left: -14px;
+    margin-top: -13px;
+
+}
+
+.search_button {
+    margin-top: -23px;
     position: relative;
-    z-index: 2;
+    width: 20px;
+    height: auto;
 }
 
 .badminton_1 {
@@ -690,28 +715,37 @@ input {
 
 
 
-@media (max-width: 1309px) {
-    .navbar ul li {
+@media (max-width: 926px) {
+    .navbar ul {
         display: block;
         text-align: center;
     }
 }
 
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
+    .images11 {
+        display: flex;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 926px) {
     .activities {
         display: block;
         text-align: center;
     }
 }
 
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
     .boks {
         margin-left: 110px;
         margin-bottom: 20px;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .popular__articles__pictures {
         display: block;
         text-align: center;
@@ -719,64 +753,104 @@ input {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .court {
         width: 100%;
 
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .box {
         width: 100%;
         height: auto;
-        padding: 30px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 926px) {
+    .box a {
+        font-size: 20px;
+        padding-left: 0px;
+        justify-content: center;
+
 
     }
 }
 
 
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
     .blocks {
+        display: block;
+        margin-top: -130px;
+        margin-bottom: -130px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 926px) {
+    .block-category {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 400px;
         margin-left: 0px;
     }
 }
 
-@media (max-width: 1309px) {
-    .block-category {
-        margin-right: 20px;
-    }
-}
-
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
     .block-category2text ul {
         padding-bottom: 23px;
     }
 }
 
+@media (max-width: 926px) {
+    .block-category3text ul {
+        padding-bottom: 0px;
+    }
+}
 
+@media (max-width: 926px) {
+    .arrow img {
+        width: 0px;
+        height: 0px;
+    }
+}
 
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
+    .badminton_1 {
+        width: 0;
+    }
+}
+
+@media (max-width: 926px) {
+    .bowling_1 {
+        width: 0;
+    }
+}
+
+@media (max-width: 926px) {
+    .soccer_1 {
+        width: 0;
+    }
+}
+
+@media (max-width: 926px) {
     .boring {
         text-align: center;
     }
 }
 
-@media (max-width: 1309px) {
-    .intro__text {
-        width: 100%;
-        margin: 50px;
-    }
-}
 
-@media (max-width: 1309px) {
+
+@media (max-width: 926px) {
     .children2 {
         margin-right: 15px;
     }
 }
 
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .company a {
         display: block;
         text-align: center;
@@ -785,7 +859,7 @@ input {
 }
 
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .line {
         display: block;
         border-left: 0px;
@@ -793,28 +867,174 @@ input {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .company {
         margin-left: 0;
         display: block;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 926px) {
     .navbar {
         margin: 0px;
+        display: block;
     }
 }
 
 
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
     .page_start {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
+        display: block;
     }
 }
 
-@media (max-width: 1309px) {
+@media (max-width: 926px) {
     .hr {
         margin-left: auto;
+        width: 375px;
     }
 }
+
+@media (max-width: 926px) {
+    .container {
+        text-align: center;
+        display: block;
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 926px) {
+    .links1 a {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 926px) {
+    .manager {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 926px) {
+    .texting {
+        text-align: center;
+        display: block;
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 926px) {
+    .boks img {
+        width: 340px;
+        height: auto;
+    }
+}
+
+@media (max-width: 926px) {
+    .boks {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 926px) {
+    .intro {
+        text-align: center;
+        display: block;
+        justify-content: center;
+    }
+}
+
+
+    @media (max-width: 926px) {
+        .intro__text {
+            margin-left: 40px;
+            width: 300px;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .boring {
+            margin-left: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+    }
+
+
+    @media (max-width: 926px) {
+        .children1 {
+            margin-left: 0px;
+            padding-top: 0px;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .children2 {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 0px;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .head_2 {
+            padding-bottom: 0px;
+        }
+    }
+
+
+
+    @media (max-width: 926px) {
+        .Logo {
+            padding-bottom: 30px;
+            margin-left: 0px;
+            margin-left: 30px;
+
+        }
+    }
+
+    @media (max-width: 926px) {
+        .contact {
+            justify-content: center;
+        }
+    }
+
+
+
+    @media (max-width: 926px) {
+        .d7 {
+            margin-left: 0px;
+            margin-bottom: 30px;
+            justify-content: left;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .form {
+            width: 100px;
+            margin: 10
+        }
+    }
+
+    @media (max-width: 926px) {
+        .footer {
+            padding-top: 10px;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .company_3 img {
+            width: 360px;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .d8 input {
+            width: 300px;
+        }
+    }
