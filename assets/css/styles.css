@@ -183,6 +183,7 @@ navbar ul li:last-child {
 .intro {
     background-color: #292c31;
     display: flex;
+    justify-content: center;
 }
 
 .darts1 {
@@ -584,6 +585,8 @@ h3 {
 .hr {
     color: #a0a0a0;
     margin: auto;
+    text-align: center;
+    width: 835px;
 
 }
 
@@ -640,10 +643,6 @@ input {
     color: #fff;
 }
 
-.hr {
-    width: 835px;
-    margin-left: 340px;
-}
 
 
 .container {
@@ -893,7 +892,7 @@ input {
 @media (max-width: 926px) {
     .hr {
         margin-left: auto;
-        width: 400px;
+        width: 375px;
     }
 }
 
@@ -1031,5 +1030,11 @@ input {
     @media (max-width: 926px) {
         .company_3 img {
             width: 360px;
+        }
+    }
+
+    @media (max-width: 926px) {
+        .d8 input {
+            width: 300px;
         }
     }
