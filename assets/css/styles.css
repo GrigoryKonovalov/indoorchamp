@@ -219,6 +219,7 @@ navbar ul li:last-child {
     width: 30px;
     height: auto;
     margin-top: 125px;
+    margin-left: 20px;
 }
 
 
@@ -230,117 +231,47 @@ navbar ul li:last-child {
 }
 
 .block-category {
-    background: #292c31;
+    background: #232c31;
     width: 300px;
-    height: 250px;
-    padding-top: 30px;
+    min-height: 250px;
+    padding-top: 60px;
     padding-left: 30px;
     padding-bottom: 30px;
     margin-left: 20px;
+    position: relative;
 }
 
-.block-category1name {
+.block-category_name {
     color: #fff;
 }
 
-.block-category1text a {
+.block-category_text a {
     color: #7c7d7e;
     transition: .3s linear;
 }
 
-.block-category1text ul {
+.block-category_text ul {
     list-style-type: none;
     padding-left: 0;
     padding-right: 30px;
     margin-top: -13px;
 }
 
-.block-category1text a:hover {
+.block-category_text a:hover {
     opacity: 0.9;
     color: #c59431;
 }
 
 
 
-.block-category1link a {
+.block-category_link a {
     color: #7c7d7e;
     transition: .3s linear;
+    position: absolute;
+    bottom: 20px;
 }
 
-.block-category1link a:hover {
-    opacity: 0.9;
-    color: #c59431;
-}
-
-
-.block-category2name {
-    color: #fff;
-    margin-top: -5px;
-}
-
-.block-category2text a {
-    color: #7c7d7e;
-    padding-bottom: 25px;
-    transition: .3s linear;
-}
-
-.block-category2text a:hover {
-    opacity: 0.9;
-    color: #c59431;
-}
-
-
-.block-category2text ul {
-    list-style-type: none;
-    padding-left: 0;
-    padding-right: 30px;
-    padding-bottom: 45px;
-    margin-top: -13px;
-}
-
-.block-category2link a {
-    color: #7c7d7e;
-    transition: .3s linear;
-}
-
-.block-category2link a:hover {
-    opacity: 0.9;
-    color: #c59431;
-}
-
-
-.block-category3name {
-    color: #fff;
-    margin-top: 5px;
-}
-
-.block-category3text a {
-    color: #7c7d7e;
-    padding-bottom: 80px;
-    transition: .3s linear;
-}
-
-
-.block-category3text a:hover {
-    opacity: 0.9;
-    color: #c59431;
-}
-
-.block-category3text ul {
-    list-style-type: none;
-    padding-left: 0;
-    padding-right: 30px;
-    padding-bottom: 65px;
-    margin-top: 20px;
-    margin-bottom: 16px;
-}
-
-.block-category3link a {
-    color: #7c7d7e;
-    transition: .3s linear;
-}
-
-.block-category3link a:hover {
+.block-category_link a:hover {
     opacity: 0.9;
     color: #c59431;
 }
@@ -352,14 +283,17 @@ navbar ul li:last-child {
 
 .box {
     background-color: #292c31;
-    font-size: 40px;
+    font-size: 37px;
     color: #fff;
     text-align: center;
     width: auto;
-    height: 189px;
+    min-height: 189px;
     padding-top: 70px;
     padding-bottom: auto;
     transition: opacity 0.2s ease-out;
+    padding-right: 10px;
+    padding-left: 10px;
+
 }
 
 .box:hover {
@@ -368,6 +302,7 @@ navbar ul li:last-child {
 
 .popular__articles__pictures {
     display: flex;
+    height: 260px;
     width: auto;
     margin-bottom: 60px;
 }
@@ -378,6 +313,7 @@ navbar ul li:last-child {
     object-fit: contain;
     transition: opacity 0.2s ease-out;
 }
+
 
 .court:hover {
     opacity: 0.9;
@@ -657,13 +593,6 @@ input {
     display: flex;
 }
 
-/* .search_1 {
-    width: 22%;
-    margin-top: -13px;
-    margin-left: 120px; 
-    /* position: relative;
-    z-index: 2; 
- } */
 
 .search_button button {
     width: 20px;
@@ -671,6 +600,7 @@ input {
     margin-left: 250px;
     background-color: #292c31;
     border-style: none;
+    cursor: pointer;
 
 }
 
@@ -689,30 +619,26 @@ input {
     height: auto;
 }
 
-.badminton_1 {
-    margin-top: -95px;
-    margin-left: 70px;
+.sport_img {
+    position: absolute;
+    top: -65px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
-.bowling_1 {
-    margin-top: -86px;
-    margin-left: 70px;
-}
-
-.soccer_1 {
-    margin-top: -111px;
-    margin-left: 70px;
-}
 
 .rectangle_active {
-    width: 100px;
-    height: 5px;
-    margin-left: 20px;
-    margin-bottom: 40px;
-    margin-top: 20px;
     background: #c59431;
 }
 
+@media (max-width: 926px) {
+    .rectangle {
+        width: 15%;
+    }
+}
 
 
 @media (max-width: 926px) {
@@ -748,33 +674,31 @@ input {
 @media (max-width: 926px) {
     .popular__articles__pictures {
         display: block;
-        text-align: center;
-
+        height: auto;
     }
 }
 
 @media (max-width: 926px) {
-    .court {
-        width: 100%;
+    .court img{
+        width: 390px;
+        height: auto;
 
     }
 }
 
 @media (max-width: 926px) {
     .box {
-        width: 100%;
-        height: auto;
+        width: auto; 
         padding-top: 0px;
         padding-bottom: 10px;
+        min-height: 0px;
     }
 }
 
 @media (max-width: 926px) {
     .box a {
-        font-size: 20px;
         padding-left: 0px;
         justify-content: center;
-
 
     }
 }
@@ -783,57 +707,41 @@ input {
 @media (max-width: 926px) {
     .blocks {
         display: block;
-        margin-top: -130px;
-        margin-bottom: -130px;
         justify-content: center;
+        position: relative;
+        left: 0;
+        top: 0;
     }
 }
 
 @media (max-width: 926px) {
     .block-category {
-        padding-top: 0px;
+        padding-top: 30px;
         padding-bottom: 0px;
-        width: 400px;
-        margin-left: 0px;
+        max-width: 100%;
+        margin-left: 33px;
     }
 }
 
 @media (max-width: 926px) {
-    .block-category2text ul {
+    .block-category_text ul {
         padding-bottom: 23px;
     }
 }
 
+
 @media (max-width: 926px) {
-    .block-category3text ul {
-        padding-bottom: 0px;
+    .arrow {
+        display: none;
     }
 }
 
 @media (max-width: 926px) {
-    .arrow img {
-        width: 0px;
-        height: 0px;
-    }
-}
-
-@media (max-width: 926px) {
-    .badminton_1 {
+    .sport_img {
         width: 0;
     }
 }
 
-@media (max-width: 926px) {
-    .bowling_1 {
-        width: 0;
-    }
-}
-
-@media (max-width: 926px) {
-    .soccer_1 {
-        width: 0;
-    }
-}
 
 @media (max-width: 926px) {
     .boring {
@@ -916,6 +824,18 @@ input {
     .manager {
         text-align: center;
         display: block;
+    }
+}
+
+@media (max-width: 926px) {
+    .manager_2 {
+padding-top: 20px;
+    }
+}
+
+@media (max-width: 926px) {
+    .manager_3 {
+padding-top: 20px;
     }
 }
 
